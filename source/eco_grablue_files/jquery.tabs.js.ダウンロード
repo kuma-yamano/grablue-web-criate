@@ -1,0 +1,14 @@
+/*
+jquery.tabs.js
+@author Kazuyuki Taguchi
+タブ切り替えを行うためだけの汎用プラグイン
+
+デフォルト
+var defaults = {
+	actClass: "active",    // アクティブ状態を示すclass
+	tabClass: "tabs",      // タブのclass
+	tabTarg : "tabContent" // タブに対応したcontentに設定したclass
+}
+
+*/
+!function(a){a.fn.tabs=function(b){var c={actClass:"active",tabClass:"tabs",tabTarg:"tabContent"};a.extend(c,b);return this.each(function(){var b=c.actClass,d="."+c.tabClass,e="."+c.tabTarg,f=a(d),g=a(e);f.first().addClass(b),g.first().addClass(b),f.on("tap",function(){var c=a(d).index(this);f.removeClass(b).eq(c).addClass(b),g.removeClass(b).eq(c).addClass(b),Game.view&&Game.view.trigger("completeTabChange")})})}}(jQuery);

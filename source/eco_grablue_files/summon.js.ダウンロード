@@ -1,0 +1,1 @@
+define(["backbone","model/data"],function(a,b){var c=b.extend({param:{},urlMethod:"summon",urlRoot:function(){var a=Game.baseUri+"summon/"+this.urlMethod;return _.each(this.param,function(b,c){a+="/"+b}),a}});return c});

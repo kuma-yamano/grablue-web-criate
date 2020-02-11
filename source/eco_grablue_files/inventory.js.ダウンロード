@@ -1,0 +1,1 @@
+define(function(){return{ITEM_KIND_NAME:{WEAPON:"weapon",SUMMON:"summon"},RECYCLING_ITEM_ID:{WEAPON:1,SUMMON:2},SE:{MOVE_ITEM:"se/scp_door_close_se_2.mp3"},LIST_ID:0}});

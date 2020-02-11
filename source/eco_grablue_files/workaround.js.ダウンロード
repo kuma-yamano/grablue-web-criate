@@ -1,0 +1,1 @@
+define(["jquery"],function(a){var b=function(){setTimeout(function(){var a=document.createElement("div");a.style.outline="solid",document.documentElement.appendChild(a),setTimeout(function(){document.documentElement.removeChild(a)},100)},0)};return{webkitGlobalRepaint:b}});
