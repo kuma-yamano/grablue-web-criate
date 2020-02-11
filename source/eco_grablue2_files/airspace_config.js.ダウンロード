@@ -1,0 +1,1 @@
+define(function(){var a={nalhegrande:{popupTitleKey:"quest_airspace_guide_1",airspaceNameKey:"airspace_name_1",showTutorial:!0},oarlyegrande:{popupTitleKey:"quest_airspace_guide_2",airspaceNameKey:"airspace_name_2",showTutorial:!1}},b=function(b){var c={};switch(!0){case+b>=130:c=a.oarlyegrande;break;default:c=a.nalhegrande}return c};return{getAirSpaceInfo:b}});
